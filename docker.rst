@@ -3,9 +3,11 @@
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
 
+*Advanced Installation of Docker*
+=================================
 
 *Docker-Compose install with Anaconda*
---------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Install `pip`
 
@@ -22,7 +24,7 @@
     ``sudo pip install docker-compose``
 
 *Running Docker without sudo*
------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Add the Docker group
 
@@ -40,29 +42,6 @@
 
 ..
     #### Comment: A numbered list of steps go here ####
-
-----
-
-*Summary*
-~~~~~~~~~
-
-..
-    Summary
-
-**Next Steps:**
-
----------------
-
-Additional information, help
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-..
-    Short description and links to any reading materials
-
-Search for an answer: `CyVerse Learning Center <http://learning.cyverse.org>`_ or `CyVerse Wiki <https://wiki.cyverse.org>`_
-
-Post your question to the user forum:
-`Ask CyVerse <http://ask.iplantcollaborative.org/questions>`_
 
 ----
 
