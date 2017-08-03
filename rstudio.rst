@@ -78,7 +78,7 @@ Note - this will fail on the first try::
  May 13 09:30:40 xxx.xxx.xx.xxx systemd[1]: Starting RStudio Server...
  May 13 09:30:40 xxx.xxx.xx.xxx systemd[1]: Started RStudio Server.
  May 13 09:30:40 xxx.xxx.xx.xxx rserver[2236]: ERROR Unable to find an installation of R on the system (which R didn't return  va...pp:472
- May 13 09:30:40 128.196.64.129 systemd[1]: rstudio-server.service: Main process exited, code=exited, status=1/FAILURE
+ May 13 09:30:40 xxx.xxx.xx.xxx systemd[1]: rstudio-server.service: Main process exited, code=exited, status=1/FAILURE
  Hint: Some lines were ellipsized, use -l to show in full.
 
 4. modify `/etc/rstudio/rserver.conf`
