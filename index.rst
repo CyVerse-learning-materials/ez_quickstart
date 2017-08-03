@@ -99,7 +99,7 @@ Atmosphere Images
     * - Atmosphere Image(s)
       - Link
 
-    * - Only 'Featured' images have `ez` installed
+    * - Only 'Featured' images have ``ez`` installed
       - `Atmosphere Featured Images <https://atmo.cyverse.org/application/images/search>`__
 
 
@@ -111,51 +111,63 @@ Atmosphere Images
 
 **Install Anaconda (Jupyter) with `ez`**
 
-1) Jupyter notebooks with Python 3 (default)
+1. Jupyter notebooks with Python 3 (default)
 
-```ezj```
+``ezj``
 
-2) Jupyter notebooks with Python 2
+2. Jupyter notebooks with Python 2
 
-```ezj -2```
+``ezj -2``
 
-3) After the installation, copy and paste the URL provided into your local computer's browser
+3. After the installation, copy and paste the URL provided into your local computer's browser
 
-a. Open Firefox or Chrome on the local computer (your laptop or desktop you are working on)
+	a. Open Firefox or Chrome on the local computer (your laptop or desktop you are working on)
 
-b. In a blank tab, copy and paste the URL provided by ezj at the end of the installation
+	b. In a blank tab, copy and paste the URL provided by ezj at the end of the installation
 
-c. Leave the Atmosphere terminal running
+	c. Leave the Atmosphere terminal running
 
-d. This has been tested on Firefox and Chrome
+	d. This has been tested on Firefox and Chrome
 
-4) When you are done using the Jupyter Notebook
+4. When you are done using the Jupyter Notebook
 
-a. Close out the browser tab with the Jupyter notebook interface
+	a. Close out the browser tab with the Jupyter notebook interface
 
-b. Return to the Atmosphere and press: Control + C
+	b. Return to the Atmosphere and press: Control + C
 
-c. This will stop the Atmosphere instance from running Jupyter notebooks
+	c. This will stop the Atmosphere instance from running Jupyter notebooks
 
 *Start a new Jupyter session*
 
 Return to the Atmosphere instance and type ezj again!
 
-```ezj```
+``ezj``
 
-Installing Singularity with `ez`
+**Installing Singularity with `ez`**
 
-```ezs```
+1. Install Singularity
 
-Installing Docker with `ez`
+``ezs``
 
-```ezd```
+You should see 
 
-1) To use Docker, you currently need to use sudo permissions
+``* Updating ez singularity and installing singularity (this may take a few minutes, coffee break!)``
+``[sudo] password for YourCyVerseUserName:``
 
-```sudo docker run <container_name>```
 
-2) After using the sudo command, Atmosphere will ask you for your CyVerse password for security purposes
+2. Test Singularity
+
+``singularity run shub://``
+
+**Installing Docker with `ez`**
+
+``ezd``
+
+1. To use Docker, you currently need to use sudo permissions
+
+``sudo docker run hello-world``
+
+2. After using the sudo command, Atmosphere will ask you for your CyVerse password for security purposes
  
 
 ----
