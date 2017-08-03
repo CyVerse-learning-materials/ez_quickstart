@@ -3,7 +3,7 @@
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
 
-QUICKSTART NAME
+EZ installation of Anaconda (Jupyter, R), Docker, and Singularity on Atmosphere
 ===============
 
 ..
@@ -100,22 +100,7 @@ Platform(s)
       - `Atmosphere <https://atmo.cyverse.org>`_
       - `Atmosphere Manual <https://wiki.cyverse.org/wiki/display/atmman/Atmosphere+Manual+Table+of+Contents>`_
       - `Guide <https://cyverse-atmosphere-guide.readthedocs-hosted.com/en/latest/>`__
-    * - BisQue
-      - Web/Point-and-click and/or Command-line (API)
-      - `BisQue <https://bisque.cyverse.org/client_service/>`_
-      - `BisQue Manual <https://wiki.cyverse.org/wiki/display/BIS>`_
-      - `Guide <>`__
-    * - DNA Subway
-      - Web/Point-and-click
-      - `DNA Subway <https://dnasubway.cyverse.org/>`_
-      - `DNA Subway Manual <http://dnasubway.cyverse.org/files/pdf/DNA_Subway_Guide.pdf>`_
-      - `Guide <https://cyverse-dnasubway-guide.readthedocs-hosted.com/en/latest/>`__
-    * - Agave API
-      - Command-line (API)
-      - `Agave API <https://agaveapi.co>`_
-      - `Live Docs <https://agaveapi.co>`_
-      - `Guide <>`__
-
+   
 Input and example data
 ~~~~~~~~~~~~~~~~~~~~~~
 
