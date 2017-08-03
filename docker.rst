@@ -5,7 +5,7 @@
 
 
 *Docker-Compose install with Anaconda*
-----------------
+--------------------------------------
 
 1. Install `pip`
 
@@ -22,7 +22,7 @@
     ``sudo pip install docker-compose``
 
 *Running Docker without sudo*
-----------------
+-----------------------------
 
 1. Add the Docker group
 
@@ -44,14 +44,14 @@
 ----
 
 *Summary*
-~~~~~~~~~~~
+~~~~~~~~~
 
 ..
     Summary
 
 **Next Steps:**
 
-----------
+---------------
 
 Additional information, help
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
