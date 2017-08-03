@@ -5,7 +5,7 @@
 
 
 *RStudio-Server install with Anaconda*
-----------------
+--------------------------------------
 
 *Setting up RStudio-Server with the `ezj -R` function on Atmosphere*
 
@@ -99,7 +99,7 @@ In terminal:
 ----
 
 *Summary*
-~~~~~~~~~~~
+~~~~~~~~~
 
 ..
     Summary

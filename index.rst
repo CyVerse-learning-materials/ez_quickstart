@@ -3,8 +3,8 @@
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
 
-EZ installation of Anaconda (Jupyter, R, Python 2, Python 3), Docker, and Singularity on Atmosphere
-===============
+EZ installation of popular data scientist workbench tools
+=========================================================
 
 ..
     #### Comment: Use short, imperative titles e.g. Upload and share data, uploading and
@@ -27,12 +27,12 @@ Goal
 .. toctree::
 	:maxdepth: 2
 
-	Quickstart home <self>
+	EZ Installation of Popular Data Scientist Workbench Tools <self>
   Installation of Rstudio on an Atmosphere Instance <rstudio.rst>
   Advanced Installation of Docker <docker.rst>
 
 ..
-	#### Comment:This tutorial can have multiple pages. The table of contents assumes
+	#### Comment: This tutorial can have multiple pages. The table of contents assumes
 	you have an additional page called 'Step Two' with content located in 'step2.rst'
 	Edit these titles and filenames as needed ####
 
@@ -90,7 +90,7 @@ Platform(s)
       - `Guide <https://cyverse-atmosphere-guide.readthedocs-hosted.com/en/latest/>`__
    
 Atmosphere Images
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
 
 *In order to complete this quickstart you will need to have the following*
 
@@ -110,7 +110,8 @@ Atmosphere Images
 *Get started*
 --------------
 
-**Install Anaconda (Jupyter, R, Python 2, Python 3)**
+*Install Anaconda (Jupyter, R, Python 2, Python 3)*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Jupyter notebooks with Python 3 (default)
 
@@ -149,7 +150,8 @@ Atmosphere Images
 	``ezj``
 2. Copy and paste the URL into the browser just as before
 
-**Install Singularity**
+*Install Singularity*
+~~~~~~~~~~~~~~~~~~~~~
 
 1. Install Singularity
 
@@ -167,7 +169,8 @@ Wait for the installation to complete.
 
 	``singularity run shub://vsoch/hello-world``
 
-**Install Docker with `ez`**
+*Install Docker with `ez`*
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Install Docker
 
@@ -183,17 +186,14 @@ Wait for the installation to complete.
 
 
 
-*Summary*
-~~~~~~~~~~~
-
-
-**Next Steps:**
+*Next Steps:*
+~~~~~~~~~~~~~
 
 Some common next steps include:
 
-1. Step
+1. `Installation of Rstudio on an Atmosphere Instance <rstudio.html>`_
 
-2. Step
+2. `Advanced Docker Setup <docker.html>`_   
 
 ----
 
@@ -204,9 +204,6 @@ Additional information, help
     Short description and links to any reading materials
 
 Search for an answer: `CyVerse Learning Center <http://learning.cyverse.org>`_ or `CyVerse Wiki <https://wiki.cyverse.org>`_
-
-Post your question to the user forum:
-`Ask CyVerse <http://ask.iplantcollaborative.org/questions>`_
 
 ----
 
