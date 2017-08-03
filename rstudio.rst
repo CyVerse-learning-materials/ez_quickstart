@@ -23,6 +23,8 @@ To set up RStudio-Server with the `conda` installation of R you need to set up t
 
 ``sudo sh -c 'echo "launchctl setenv RSTUDIO_WHICH_R $RSTUDIO_WHICH_R" >>~/.bash_profile'``
 
+``source .bash_profile``
+
 3. Install RStudio-Server using the `latest version<https://www.rstudio.com/products/rstudio/download-server/>_
 
  Ubuntu
