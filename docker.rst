@@ -9,10 +9,36 @@
 
 *Installing Docker-Compose*
 
+1. Install pip
 
+    ``sudo wget https://bootstrap.pypa.io/get-pip.py``
+
+    ``python get-pip.py``
+
+2. Change ownership of `/home/Anaconda*`
+
+    ``sudo chown ${USER}:iplant-everyone /home/anaconda*/ -R``
+
+3. Install Docker-Compose
+
+    ``sudo pip install docker-compose``
 
 *Running Docker without `sudo`*
+----------------
 
+1. Add the Docker group
+
+    ``groupadd docker``
+
+2. Add user to group 
+
+    ``sudo usermod -aG docker $USER``
+    
+3. Close Terminal and reopen
+
+4. Test Docker without `sudo`
+
+    ``docker run hello-world``
 
 ..
     #### Comment: A numbered list of steps go here ####
