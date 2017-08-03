@@ -41,7 +41,6 @@ To set up RStudio-Server with the `conda` installation of R you need to set up t
  
  ``sudo yum install --nogpgcheck rstudio-server-rhel-1.0.153-x86_64.rpm``
 
-
 Note - this will fail on the first try::
 
  user_name@128:/home$ sudo gdebi rstudio-server-1.0.143-amd64.deb
@@ -74,14 +73,13 @@ Note - this will fail on the first try::
     CGroup: /system.slice/rstudio-server.service
             └─2236 /usr/lib/rstudio-server/bin/rserver
 
- May 13 09:30:40 128.196.64.129 systemd[1]: rstudio-server.service: Service hold-off time over, scheduling restart.
- May 13 09:30:40 128.196.64.129 systemd[1]: Stopped RStudio Server.
- May 13 09:30:40 128.196.64.129 systemd[1]: Starting RStudio Server...
- May 13 09:30:40 128.196.64.129 systemd[1]: Started RStudio Server.
- May 13 09:30:40 128.196.64.129 rserver[2236]: ERROR Unable to find an installation of R on the system (which R didn't return  va...pp:472
+ May 13 09:30:40 xxx.xxx.xx.xxx systemd[1]: rstudio-server.service: Service hold-off time over, scheduling restart.
+ May 13 09:30:40 xxx.xxx.xx.xxx systemd[1]: Stopped RStudio Server.
+ May 13 09:30:40 xxx.xxx.xx.xxx systemd[1]: Starting RStudio Server...
+ May 13 09:30:40 xxx.xxx.xx.xxx systemd[1]: Started RStudio Server.
+ May 13 09:30:40 xxx.xxx.xx.xxx rserver[2236]: ERROR Unable to find an installation of R on the system (which R didn't return  va...pp:472
  May 13 09:30:40 128.196.64.129 systemd[1]: rstudio-server.service: Main process exited, code=exited, status=1/FAILURE
  Hint: Some lines were ellipsized, use -l to show in full.
-
 
 4. modify `/etc/rstudio/rserver.conf`
 
@@ -91,17 +89,23 @@ Note - this will fail on the first try::
 
  ``rstudio-server start``
 
-6. There were a couple of issues installing packages for the first time in RStudio
+*Installing Packages in RStudio-Server*
+---------------------------------------
 
-In R:
+There are a couple of issues installing packages for the first time in RStudio-Server with the installation of Anaconda3
+
+1. In a terminal, install this dependency (Ubuntu):
+
+ ``sudo ln -s /usr/lib/x86_64-linux-gnu/libgfortran.so.3 /usr/lib/libgfortran.so``
+
+2. In R set the repository you want to download packages from and the type of method:
 
  ``options(repos='http://cran.rstudio.com/')``
 
  ``options(download.file.method = "wget")``
 
-In terminal:
+3. Test by installing a package
 
- ``sudo ln -s /usr/lib/x86_64-linux-gnu/libgfortran.so.3 /usr/lib/libgfortran.so``
 ..
     #### Comment: A numbered list of steps go here ####
 
