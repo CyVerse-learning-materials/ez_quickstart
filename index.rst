@@ -119,7 +119,11 @@ Atmosphere Images
 
 	``ezj -2``
 
-3. After the installation, copy and paste the URL provided into your local computer's browser
+3. Jupyter notebooks with R Kernel
+
+	``ezj -R`` or ``ezj -r``
+	
+4. After the installation, copy and paste the URL provided into your local computer's browser
 
 	a. Open Firefox or Chrome on the local computer (your laptop or desktop you are working on)
 
@@ -129,7 +133,7 @@ Atmosphere Images
 
 	d. This has been tested on Firefox and Chrome
 
-4. When you are done using the Jupyter Notebook
+5. When you are done using the Jupyter Notebook
 
 	a. Close out the browser tab with the Jupyter notebook interface
 
@@ -169,12 +173,9 @@ Wait for the installation to complete.
 
 2. Test Docker 
 
-note: you need to use ``sudo`` permissions
+	note: You need to use ``sudo`` permissions with Docker. After using the ``sudo`` command, Atmosphere will ask you for your CyVerse password for security purposes.
 
 	``sudo docker run hello-world``
-
-3. After using the ``sudo`` command, Atmosphere will ask you for your CyVerse password for security purposes
- 
 
 ----
 
