@@ -7,9 +7,7 @@
 *Docker-Compose install with Anaconda*
 ----------------
 
-*Installing Docker-Compose*
-
-1. Install pip
+1. Install `pip`
 
     ``sudo wget https://bootstrap.pypa.io/get-pip.py``
 
@@ -23,7 +21,7 @@
 
     ``sudo pip install docker-compose``
 
-*Running Docker without `sudo`*
+*Running Docker without sudo*
 ----------------
 
 1. Add the Docker group
