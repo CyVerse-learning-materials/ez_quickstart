@@ -88,22 +88,20 @@ Platform(s)
       - `Atmosphere Manual <https://wiki.cyverse.org/wiki/display/atmman/Atmosphere+Manual+Table+of+Contents>`_
       - `Guide <https://cyverse-atmosphere-guide.readthedocs-hosted.com/en/latest/>`__
    
-Input and example data
+Atmosphere Images
 ~~~~~~~~~~~~~~~~~~~~~~
 
-*In order to complete this quickstart you will need to have the following inputs prepared*
+*In order to complete this quickstart you will need to have the following*
 
 .. list-table::
     :header-rows: 1
 
-    * - Input File(s)
-      - Format
-      - Preparation/Notes
-      - Example Data
-    * -
-      -
-      -
-      -
+    * - Atmosphere Image(s)
+      - Link
+
+    * - Only 'Featured' images have `ez` installed
+      - `Atmosphere Featured Images <https://atmo.cyverse.org/application/images/search>`__
+
 
 ----
 
@@ -154,7 +152,9 @@ Installing Docker with `ez`
 ```ezd```
 
 1) To use Docker, you currently need to use sudo permissions
-sudo docker run <container_name>
+
+```sudo docker run <container_name>```
+
 2) After using the sudo command, Atmosphere will ask you for your CyVerse password for security purposes
  
 
