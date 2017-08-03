@@ -3,8 +3,8 @@
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
 
-EZ installation of popular data scientist workbench tools
-=========================================================
+EZ installation of popular data scientist tools
+===============================================
 
 ..
     #### Comment: Use short, imperative titles e.g. Upload and share data, uploading and
@@ -27,7 +27,7 @@ Goal
 .. toctree::
 	:maxdepth: 2
 
-	EZ Installation of Popular Data Scientist Workbench Tools <self>
+	EZ Installation of Popular Data Scientist Tools <self>
   Installation of Rstudio on an Atmosphere Instance <rstudio.rst>
   Advanced Installation of Docker <docker.rst>
 
