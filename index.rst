@@ -65,9 +65,6 @@ Downloads, access, and services
    * - Atmosphere access
      - You must have access to Atmosphere
      - `Request Access <https://user.cyverse.org/>`_
-   * - Cyberduck
-     - Standalone software for upload/download to Data Store
-     - `Download <https://cyberduck.io/>`_
 
 Platform(s)
 ~~~~~~~~~~~
@@ -85,16 +82,6 @@ Platform(s)
       - Link
       - Platform Documentation
       - Quick Start
-    * - Data Store
-      - GUI/Command line
-      - `Data Store <http://www.cyverse.org/data-store>`_
-      - `Data Store Manual <https://wiki.cyverse.org/wiki/display/DS/Data+Store+Table+of+Contents>`_
-      - `Guide <https://cyverse-data-store-guide.readthedocs-hosted.com/en/latest/>`__
-    * - Discovery Environment
-      - Web/Point-and-click
-      - `Discovery Environment <https://de.cyverse.org/de/>`_
-      - `DE Manual <https://wiki.cyverse.org/wiki/display/DEmanual/Table+of+Contents>`_
-      - `Guide <http://learning.cyverse.org/projects/cyverse-discovery-environment-guide/>`__
     * - Atmosphere
       - Command line (ssh) and/or Desktop (VNC)
       - `Atmosphere <https://atmo.cyverse.org>`_
@@ -124,8 +111,52 @@ Input and example data
 *Get started*
 --------------
 
-1. Step one
-2. Step two
+**Install Anaconda (Jupyter) with `ez`**
+
+1) Jupyter notebooks with Python 3 (default)
+
+```ezj```
+
+2) Jupyter notebooks with Python 2
+
+```ezj -2```
+
+3) After the installation, copy and paste the URL provided into your local computer's browser
+
+a. Open Firefox or Chrome on the local computer (your laptop or desktop you are working on)
+
+b. In a blank tab, copy and paste the URL provided by ezj at the end of the installation
+
+c. Leave the Atmosphere terminal running
+
+d. This has been tested on Firefox and Chrome
+
+4) When you are done using the Jupyter Notebook
+
+a. Close out the browser tab with the Jupyter notebook interface
+
+b. Return to the Atmosphere and press: Control + C
+
+c. This will stop the Atmosphere instance from running Jupyter notebooks
+
+*Start a new Jupyter session*
+
+Return to the Atmosphere instance and type ezj again!
+
+```ezj```
+
+Installing Singularity with `ez`
+
+```ezs```
+
+Installing Docker with `ez`
+
+```ezd```
+
+1) To use Docker, you currently need to use sudo permissions
+sudo docker run <container_name>
+2) After using the sudo command, Atmosphere will ask you for your CyVerse password for security purposes
+ 
 
 ----
 
