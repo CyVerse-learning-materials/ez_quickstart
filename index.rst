@@ -10,8 +10,8 @@ EZ installation of popular data scientist tools
     #### Comment: Use short, imperative titles e.g. Upload and share data, uploading and
     sharing data ####
 
-Goal
-----
+*Goal*
+------
 
 ..
     Avoid covering upstream and downstream steps that are not explicitly and
@@ -43,8 +43,8 @@ Goal
 
 -----
 
-Prerequisites
--------------
+*Prerequisites*
+---------------
 
 
 
@@ -107,8 +107,8 @@ Atmosphere Images
 ----
 
 
-*Get started*
---------------
+*Get Started*
+-------------
 
 *Install Anaconda (Jupyter, R, Python 2, Python 3)*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -187,7 +187,7 @@ Wait for the installation to complete.
 
 
 *Next Steps:*
-~~~~~~~~~~~~~
+-------------
 
 Some common next steps include:
 
@@ -197,7 +197,7 @@ Some common next steps include:
 
 ----
 
-Additional information, help
+Additional Information
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ..
