@@ -123,7 +123,7 @@ Atmosphere Images
 
 	a. Open Firefox or Chrome on the local computer (your laptop or desktop you are working on)
 
-	b. In a blank tab, copy and paste the URL provided by ezj at the end of the installation
+	b. In a blank tab, copy and paste the URL provided by ``ezj`` at the end of the installation
 
 	c. Leave the Atmosphere terminal running
 
@@ -133,13 +133,13 @@ Atmosphere Images
 
 	a. Close out the browser tab with the Jupyter notebook interface
 
-	b. Return to the Atmosphere and press: Control + C
+	b. Return to the Atmosphere and press: ``control + C``
 
 	c. This will stop the Atmosphere instance from running Jupyter notebooks
 
 *Start a new Jupyter session*
 
-Return to the Atmosphere instance and type ezj again!
+Return to the Atmosphere instance and type ``ezj`` again!
 
 ``ezj``
 
@@ -152,22 +152,28 @@ Return to the Atmosphere instance and type ezj again!
 You should see 
 
 ``* Updating ez singularity and installing singularity (this may take a few minutes, coffee break!)``
+
 ``[sudo] password for YourCyVerseUserName:``
 
+Wait for the installation to complete.
 
 2. Test Singularity
 
-``singularity run shub://``
+``singularity run shub://vsoch/hello-world``
 
 **Installing Docker with `ez`**
 
+1. Install Docker
+
 ``ezd``
 
-1. To use Docker, you currently need to use sudo permissions
+2. Test Docker 
+
+note: you need to use ``sudo`` permissions
 
 ``sudo docker run hello-world``
 
-2. After using the sudo command, Atmosphere will ask you for your CyVerse password for security purposes
+3. After using the ``sudo`` command, Atmosphere will ask you for your CyVerse password for security purposes
  
 
 ----
