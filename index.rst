@@ -28,7 +28,8 @@ Goal
 	:maxdepth: 2
 
 	Quickstart home <self>
-	Step Two <step2.rst>
+  Installation of Rstudio on an Atmosphere Instance <rstudio.rst>
+  Advanced Installation of Docker <docker.rst>
 
 ..
 	#### Comment:This tutorial can have multiple pages. The table of contents assumes
