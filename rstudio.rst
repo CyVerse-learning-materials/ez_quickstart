@@ -28,12 +28,16 @@ To set up RStudio-Server with the `conda` installation of R you need to set up t
 3. Install RStudio-Server using the `latest version<https://www.rstudio.com/products/rstudio/download-server/>_
 
  Ubuntu
+  
+  Install Dependencies
  
- ``sudo apt-get install gdebi-core``
+ ``sudo apt-get install gdebi-core g++``
 
+ Change to the `/home` folder
+ 
  ``cd /home``
  
- ``wget https://download2.rstudio.org/rstudio-server-1.0.153-amd64.deb``
+ ``sudo wget https://download2.rstudio.org/rstudio-server-1.0.153-amd64.deb``
  
  ``sudo gdebi -n rstudio-server-1.0.153-amd64.deb``
  
@@ -41,7 +45,7 @@ To set up RStudio-Server with the `conda` installation of R you need to set up t
  
  ``cd /home``
  
- ``wget https://download2.rstudio.org/rstudio-server-rhel-1.0.153-x86_64.rpm``
+ ``sudo wget https://download2.rstudio.org/rstudio-server-rhel-1.0.153-x86_64.rpm``
  
  ``sudo yum install --nogpgcheck rstudio-server-rhel-1.0.153-x86_64.rpm``
 
@@ -110,6 +114,8 @@ There are a couple of issues installing packages for the first time in RStudio-S
 
 3. Test by installing a package
 
+ ``install.packages("raster")
+ 
 ..
     #### Comment: A numbered list of steps go here ####
 
