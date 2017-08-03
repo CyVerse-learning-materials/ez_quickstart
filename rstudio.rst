@@ -20,6 +20,7 @@ To set up RStudio-Server with the `conda` installation of R you need to set up t
 2. Add to your `~/.bash_profile`:
 
 ``sudo sh -c 'echo "export RSTUDIO_WHICH_R="/home/anaconda3/bin/R"" >> ~/.bash_profile'``
+
 ``sudo sh -c 'echo "launchctl setenv RSTUDIO_WHICH_R $RSTUDIO_WHICH_R" >>~/.bash_profile'``
 
 3. Install RStudio-Server using the `latest version<https://www.rstudio.com/products/rstudio/download-server/>_
