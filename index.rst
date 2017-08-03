@@ -146,6 +146,7 @@ Atmosphere Images
 1. Return to the Atmosphere instance and type ``ezj`` again!
 
 	``ezj``
+2. Copy and paste the URL into the browser just as before
 
 **Install Singularity**
 
