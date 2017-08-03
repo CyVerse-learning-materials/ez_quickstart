@@ -3,7 +3,7 @@
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
 
-EZ installation of Anaconda (Jupyter, R), Docker, and Singularity on Atmosphere
+EZ installation of Anaconda (Jupyter, R, Python 2, Python 3), Docker, and Singularity on Atmosphere
 ===============
 
 ..
@@ -109,15 +109,15 @@ Atmosphere Images
 *Get started*
 --------------
 
-**Install Anaconda (Jupyter) with `ez`**
+**Install Anaconda (Jupyter, R, Python 2, Python 3)**
 
 1. Jupyter notebooks with Python 3 (default)
 
-``ezj``
+	``ezj``
 
 2. Jupyter notebooks with Python 2
 
-``ezj -2``
+	``ezj -2``
 
 3. After the installation, copy and paste the URL provided into your local computer's browser
 
@@ -137,41 +137,41 @@ Atmosphere Images
 
 	c. This will stop the Atmosphere instance from running Jupyter notebooks
 
-*Start a new Jupyter session*
+*Start a new Jupyter session on a VM with EZ already installed*
 
-Return to the Atmosphere instance and type ``ezj`` again!
+1. Return to the Atmosphere instance and type ``ezj`` again!
 
-``ezj``
+	``ezj``
 
-**Installing Singularity with `ez`**
+**Installing Singularity**
 
 1. Install Singularity
 
-``ezs``
+	``ezs``
 
 You should see 
 
-``* Updating ez singularity and installing singularity (this may take a few minutes, coffee break!)``
+	``* Updating ez singularity and installing singularity (this may take a few minutes, coffee break!)``
 
-``[sudo] password for YourCyVerseUserName:``
+	``[sudo] password for YourCyVerseUserName:``
 
 Wait for the installation to complete.
 
 2. Test Singularity
 
-``singularity run shub://vsoch/hello-world``
+	``singularity run shub://vsoch/hello-world``
 
 **Installing Docker with `ez`**
 
 1. Install Docker
 
-``ezd``
+	``ezd``
 
 2. Test Docker 
 
 note: you need to use ``sudo`` permissions
 
-``sudo docker run hello-world``
+	``sudo docker run hello-world``
 
 3. After using the ``sudo`` command, Atmosphere will ask you for your CyVerse password for security purposes
  
