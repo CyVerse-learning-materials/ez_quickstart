@@ -143,7 +143,7 @@ Atmosphere Images
 
 	``ezj``
 
-**Installing Singularity**
+**Install Singularity**
 
 1. Install Singularity
 
@@ -161,7 +161,7 @@ Wait for the installation to complete.
 
 	``singularity run shub://vsoch/hello-world``
 
-**Installing Docker with `ez`**
+**Install Docker with `ez`**
 
 1. Install Docker
 
