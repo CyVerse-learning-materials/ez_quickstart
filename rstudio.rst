@@ -21,15 +21,23 @@ To set up RStudio-Server with the `conda` installation of R you need to set up t
 
 ``sudo sh -c 'echo "export RSTUDIO_WHICH_R="/home/anaconda3/bin/R"" >> ~/.bash_profile'``
 
+``sudo sh -c 'echo "launchctl setenv RSTUDIO_WHICH_R $RSTUDIO_WHICH_R" >>~/.bash_profile'``
+
+``source .bash_profile``
+
 3. Install RStudio-Server using the `latest version<https://www.rstudio.com/products/rstudio/download-server/>_
 
  Ubuntu
+  
+  Install Dependencies
  
- ``sudo apt-get install gdebi-core``
+ ``sudo apt-get install gdebi-core g++``
 
+ Change to the `/home` folder
+ 
  ``cd /home``
  
- ``wget https://download2.rstudio.org/rstudio-server-1.0.153-amd64.deb``
+ ``sudo wget https://download2.rstudio.org/rstudio-server-1.0.153-amd64.deb``
  
  ``sudo gdebi -n rstudio-server-1.0.153-amd64.deb``
  
@@ -37,7 +45,7 @@ To set up RStudio-Server with the `conda` installation of R you need to set up t
  
  ``cd /home``
  
- ``wget https://download2.rstudio.org/rstudio-server-rhel-1.0.153-x86_64.rpm``
+ ``sudo wget https://download2.rstudio.org/rstudio-server-rhel-1.0.153-x86_64.rpm``
  
  ``sudo yum install --nogpgcheck rstudio-server-rhel-1.0.153-x86_64.rpm``
 
@@ -87,14 +95,14 @@ Note - this will fail on the first try::
 
 5. Restart RStudio-Server
 
- ``rstudio-server start``
+ ``sudo rstudio-server start``
 
 *Installing Packages in RStudio-Server*
 ---------------------------------------
 
 There are a couple of issues installing packages for the first time in RStudio-Server with the installation of Anaconda3
 
-1. In a terminal, install this dependency (Ubuntu):
+1. In a terminal, set the `libfortran.so` (Ubuntu):
 
  ``sudo ln -s /usr/lib/x86_64-linux-gnu/libgfortran.so.3 /usr/lib/libgfortran.so``
 
@@ -106,6 +114,8 @@ There are a couple of issues installing packages for the first time in RStudio-S
 
 3. Test by installing a package
 
+ ``install.packages("raster")
+ 
 ..
     #### Comment: A numbered list of steps go here ####
 
