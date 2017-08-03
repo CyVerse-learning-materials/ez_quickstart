@@ -21,15 +21,26 @@ To set up RStudio-Server with the `conda` installation of R you need to set up t
 
 ``sudo sh -c 'echo "export RSTUDIO_WHICH_R="/home/anaconda3/bin/R"" >> ~/.bash_profile'``
 
-3. Install RStudio-Server using the [latest version](https://www.rstudio.com/products/rstudio/download-server/)
+3. Install RStudio-Server using the `latest version<https://www.rstudio.com/products/rstudio/download-server/>_
 
+ Ubuntu
+ 
  ``sudo apt-get install gdebi-core``
 
  ``cd /home``
  
- ``wget https://download2.rstudio.org/rstudio-server-1.0.143-amd64.deb``
+ ``wget https://download2.rstudio.org/rstudio-server-1.0.153-amd64.deb``
  
- ``sudo gdebi -n rstudio-server-1.0.143-amd64.deb``
+ ``sudo gdebi -n rstudio-server-1.0.153-amd64.deb``
+ 
+ Centos
+ 
+ ``cd /home``
+ 
+ ``wget https://download2.rstudio.org/rstudio-server-rhel-1.0.153-x86_64.rpm``
+ 
+ ``sudo yum install --nogpgcheck rstudio-server-rhel-1.0.153-x86_64.rpm``
+
 
 Note - this will fail on the first try::
 
