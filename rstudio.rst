@@ -4,7 +4,7 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 
-*Section Name*
+*RStudio-Server install with Anaconda*
 ----------------
 
 *Setting up RStudio-Server with the `ezj -R` function on Atmosphere*
@@ -15,24 +15,23 @@ To set up RStudio-Server with the `conda` installation of R you need to set up t
 
 1. Add `anaconda3` to your path
 
-``export PATH="/home/anaconda3/bin:$PATH"``
+ ``export PATH="/home/anaconda3/bin:$PATH"``
 
 2. Add to your `~/.bash_profile`:
 
-```
-sudo sh -c 'echo "export RSTUDIO_WHICH_R="/home/anaconda3/bin/R"" >> ~/.bash_profile'
-```
+``sudo sh -c 'echo "export RSTUDIO_WHICH_R="/home/anaconda3/bin/R"" >> ~/.bash_profile'``
 
 3. Install RStudio-Server using the [latest version](https://www.rstudio.com/products/rstudio/download-server/)
 
-```
-sudo apt-get install gdebi-core
-cd /home
-wget https://download2.rstudio.org/rstudio-server-1.0.143-amd64.deb
-sudo gdebi -n rstudio-server-1.0.143-amd64.deb
-```
+ ``sudo apt-get install gdebi-core``
 
-Note - this will fail on the first try. 
+ ``cd /home``
+ 
+ ``wget https://download2.rstudio.org/rstudio-server-1.0.143-amd64.deb``
+ 
+ ``sudo gdebi -n rstudio-server-1.0.143-amd64.deb``
+
+  Note - this will fail on the first try. 
 
 ``
 user_name@128:/home$ sudo gdebi rstudio-server-1.0.143-amd64.deb
@@ -77,23 +76,23 @@ Hint: Some lines were ellipsized, use -l to show in full.
 
 4. modify `/etc/rstudio/rserver.conf`
 
-``sudo sh -c 'echo "rsession-which-r=/home/anaconda3/bin/R" >> /etc/rstudio/rserver.conf'``
+ ``sudo sh -c 'echo "rsession-which-r=/home/anaconda3/bin/R" >> /etc/rstudio/rserver.conf'``
 
 5. Restart RStudio-Server
 
-``rstudio-server start``
+ ``rstudio-server start``
 
 6. There were a couple of issues installing packages for the first time in RStudio
 
 In R:
 
-``options(repos='http://cran.rstudio.com/')``
+ ``options(repos='http://cran.rstudio.com/')``
 
-``options(download.file.method = "wget")``
+ ``options(download.file.method = "wget")``
 
 In terminal:
 
-``sudo ln -s /usr/lib/x86_64-linux-gnu/libgfortran.so.3 /usr/lib/libgfortran.so``
+ ``sudo ln -s /usr/lib/x86_64-linux-gnu/libgfortran.so.3 /usr/lib/libgfortran.so``
 ..
     #### Comment: A numbered list of steps go here ####
 
