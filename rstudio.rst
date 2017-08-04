@@ -5,7 +5,7 @@
 
 
 *RStudio-Server install with Anaconda*
-----------------
+--------------------------------------
 
 *Setting up RStudio-Server with the `ezj -R` function on Atmosphere*
 
@@ -129,7 +129,7 @@ There are a couple of issues installing packages for the first time in RStudio-S
 
 **Next Steps:**
 
-----------
+---------------
 
 Additional information, help
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -149,7 +149,7 @@ Post your question to the user forum:
 - On Github: `Repo link <FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_>`_
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
 
-----
+-------------------------------------
 
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
