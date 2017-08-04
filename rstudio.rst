@@ -9,7 +9,7 @@
 
 *Setting up RStudio-Server with the `ezj -R` function on Atmosphere*
 
-Recently we set up a `ez` script which is executed in the terminal or web shell to install Anaconda3 with Jupyter Notebook. One of the features is to install R kernel with Jupyter. It also installs `r-essentials` with numerous common R packages.
+Recently we set up a `ez` script which is executed in the terminal or web shell to install Anaconda3 with Jupyter Notebook. One of the features is to install R kernel with Jupyter. It also installs `r-essentials<https://anaconda.org/r/r-essentials>`_ with numerous common R packages.
 
 To set up RStudio-Server with the `conda` installation of R you need to set up the bash profile.
 
