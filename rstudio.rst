@@ -17,7 +17,11 @@ To set up RStudio-Server with the `conda` installation of R you need to set up t
 
  ``export PATH="/home/anaconda3/bin:$PATH"``
 
-2. Add to your `~/.bash_profile`:
+2. Change ownership of the /home/anaconda3/ directory
+
+ ``chown ${USER}:iplant-everyone /home/anaconda3/ -R``
+
+3. Add to your `~/.bash_profile`:
 
  ``sudo sh -c 'echo "export RSTUDIO_WHICH_R="/home/anaconda3/bin/R"" >> ~/.bash_profile'``
 
@@ -25,24 +29,24 @@ To set up RStudio-Server with the `conda` installation of R you need to set up t
 
  You will need to exit and restart your terminal for these to take effect
 
-3. Install RStudio-Server using the `latest version<https://www.rstudio.com/products/rstudio/download-server/>`_
+4. Install RStudio-Server using the `latest version<https://www.rstudio.com/products/rstudio/download-server/>`_
 
  Ubuntu
   In a terminal, reset the symbolic link for `libfortran.so`:
 
- ``sudo ln -s /usr/lib/x86_64-linux-gnu/libgfortran.so.3 /usr/lib/libgfortran.so``
+  ``sudo ln -s /usr/lib/x86_64-linux-gnu/libgfortran.so.3 /usr/lib/libgfortran.so``
 
   Install Dependencies
  
- ``sudo apt-get install gdebi-core g++``
+  ``sudo apt-get install gdebi-core g++``
 
- Change to the `/opt` folder
+  Change to the `/opt` folder
  
- ``cd /opt``
+  ``cd /opt``
  
- ``sudo wget https://download2.rstudio.org/rstudio-server-1.0.153-amd64.deb``
+  ``sudo wget https://download2.rstudio.org/rstudio-server-1.0.153-amd64.deb``
  
- ``sudo gdebi -n rstudio-server-1.0.153-amd64.deb``
+  ``sudo gdebi -n rstudio-server-1.0.153-amd64.deb``
  
  Centos
  
@@ -92,15 +96,15 @@ Note - this will fail on the first try::
  May 13 09:30:40 xxx.xxx.xx.xxx systemd[1]: rstudio-server.service: Main process exited, code=exited, status=1/FAILURE
  Hint: Some lines were ellipsized, use -l to show in full.
 
-4. modify `/etc/rstudio/rserver.conf`
+5. modify `/etc/rstudio/rserver.conf`
 
  ``sudo sh -c 'echo "rsession-which-r=/home/anaconda3/bin/R" >> /etc/rstudio/rserver.conf'``
 
-5. Restart RStudio-Server
+6. Restart RStudio-Server
 
  ``sudo rstudio-server start``
 
-6. Log into RStudio-Server
+7. Log into RStudio-Server
 
  a. Copy the IP address for the VM from the Atmosphere browser window.
  b. Paste the IP address into a new browser window
