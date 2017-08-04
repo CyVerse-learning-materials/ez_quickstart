@@ -5,9 +5,10 @@
 
 
 *RStudio-Server install with Anaconda*
---------------------------------------
+======================================
 
 *Setting up RStudio-Server with the `ezj -R` function on Atmosphere*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Recently we set up a `ez` script which is executed in the terminal or web shell to install Anaconda3 with Jupyter Notebook. One of the features is to install R kernel with Jupyter. It also installs `r-essentials <https://anaconda.org/r/r-essentials>`_ with numerous common R packages.
 
@@ -112,7 +113,7 @@ Note - this will fail on the first try::
  d. Log in using your CyVerse Username and Password.
  
 *Installing Packages for R and RStudio-Server*
----------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Because we are using Anaconda3, it is suggested that you use `conda` to install your R packages from a terminal
 
