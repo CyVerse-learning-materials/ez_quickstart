@@ -28,7 +28,10 @@ To set up RStudio-Server with the `conda` installation of R you need to set up t
 3. Install RStudio-Server using the `latest version<https://www.rstudio.com/products/rstudio/download-server/>`_
 
  Ubuntu
-  
+  In a terminal, reset the symbolic link for `libfortran.so`:
+
+ ``sudo ln -s /usr/lib/x86_64-linux-gnu/libgfortran.so.3 /usr/lib/libgfortran.so``
+
   Install Dependencies
  
  ``sudo apt-get install gdebi-core g++``
@@ -97,24 +100,27 @@ Note - this will fail on the first try::
 
  ``sudo rstudio-server start``
 
+6. Log into RStudio-Server
+
+ a. Copy the IP address for the VM from the Atmosphere browser window.
+ b. Paste the IP address into a new browser window
+ c. add `:8787` port # to the IP address
+ d. Log in using your CyVerse Username and Password.
+ 
 *Installing Packages in RStudio-Server*
 ---------------------------------------
 
 There are a couple of issues installing packages for the first time in RStudio-Server with the installation of Anaconda3
 
-1. In a terminal, set the `libfortran.so` (Ubuntu):
-
- ``sudo ln -s /usr/lib/x86_64-linux-gnu/libgfortran.so.3 /usr/lib/libgfortran.so``
-
-2. In R set the repository you want to download packages from and the type of method:
+1. In R set the repository you want to download packages from and the type of method:
 
  ``options(repos='http://cran.rstudio.com/')``
 
  ``options(download.file.method = "wget")``
 
-3. Test by installing a package
+2. Test by installing a package
 
- ``install.packages("raster")
+ ``install.packages("raster")``
  
 ..
     #### Comment: A numbered list of steps go here ####
