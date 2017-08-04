@@ -40,8 +40,6 @@
 
     ``docker run hello-world``
 
-..
-    #### Comment: A numbered list of steps go here ####
 
 ----
 
