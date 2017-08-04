@@ -9,7 +9,7 @@
 
 *Setting up RStudio-Server with the `ezj -R` function on Atmosphere*
 
-Recently we set up a `ez` script which is executed in the terminal or web shell to install Anaconda3 with Jupyter Notebook. One of the features is to install R kernel with Jupyter. It also installs `r-essentials` with numerous common R packages.
+Recently we set up a `ez` script which is executed in the terminal or web shell to install Anaconda3 with Jupyter Notebook. One of the features is to install R kernel with Jupyter. It also installs `r-essentials<https://anaconda.org/r/r-essentials>`_ with numerous common R packages.
 
 To set up RStudio-Server with the `conda` installation of R you need to set up the bash profile.
 
@@ -19,13 +19,13 @@ To set up RStudio-Server with the `conda` installation of R you need to set up t
 
 2. Add to your `~/.bash_profile`:
 
-``sudo sh -c 'echo "export RSTUDIO_WHICH_R="/home/anaconda3/bin/R"" >> ~/.bash_profile'``
+ ``sudo sh -c 'echo "export RSTUDIO_WHICH_R="/home/anaconda3/bin/R"" >> ~/.bash_profile'``
 
-``sudo sh -c 'echo "launchctl setenv RSTUDIO_WHICH_R $RSTUDIO_WHICH_R" >>~/.bash_profile'``
+ ``sudo sh -c 'echo "launchctl setenv RSTUDIO_WHICH_R $RSTUDIO_WHICH_R" >> ~/.bash_profile'``
 
-``source .bash_profile``
+ You will need to exit and restart your terminal for these to take effect
 
-3. Install RStudio-Server using the `latest version<https://www.rstudio.com/products/rstudio/download-server/>_
+3. Install RStudio-Server using the `latest version<https://www.rstudio.com/products/rstudio/download-server/>`_
 
  Ubuntu
   
@@ -33,9 +33,9 @@ To set up RStudio-Server with the `conda` installation of R you need to set up t
  
  ``sudo apt-get install gdebi-core g++``
 
- Change to the `/home` folder
+ Change to the `/opt` folder
  
- ``cd /home``
+ ``cd /opt``
  
  ``sudo wget https://download2.rstudio.org/rstudio-server-1.0.153-amd64.deb``
  
@@ -43,7 +43,7 @@ To set up RStudio-Server with the `conda` installation of R you need to set up t
  
  Centos
  
- ``cd /home``
+ ``cd /opt``
  
  ``sudo wget https://download2.rstudio.org/rstudio-server-rhel-1.0.153-x86_64.rpm``
  
@@ -129,7 +129,7 @@ There are a couple of issues installing packages for the first time in RStudio-S
 
 **Next Steps:**
 
-----------
+---------------
 
 Additional information, help
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -149,7 +149,7 @@ Post your question to the user forum:
 - On Github: `Repo link <FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_>`_
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
 
-----
+-------------------------------------
 
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
