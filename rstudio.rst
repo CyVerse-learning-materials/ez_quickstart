@@ -133,11 +133,6 @@ For example:
 This documentation is intended for use with CyVerse `Atmosphere <http://atmo.cyverse.org>`_ featured images. It has been tested on Ubuntu 16.04 and Centos 6.8 images.
 
 ..
-    
-
-**Next Steps:**
-
----------------
 
 Additional information, help
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
