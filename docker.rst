@@ -15,7 +15,7 @@
 
     ``python get-pip.py``
 
-2. Change ownership of `/home/Anaconda*`
+2. Change ownership of `/home/anaconda*`
 
     ``sudo chown ${USER}:iplant-everyone /home/anaconda*/ -R``
 
