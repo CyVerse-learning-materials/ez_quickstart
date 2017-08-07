@@ -12,6 +12,7 @@ EZ installation of popular data scientist tools
 
 *Goal*
 ------
+The `ez` command line program allows users to install popular data science packages such as Anaconda (Jupyter notebooks, Python 2/3, R), Docker, and Singularity with simple commands on any running Atmosphere or Jetstream instance.
 
 ..
     Avoid covering upstream and downstream steps that are not explicitly and
@@ -97,11 +98,8 @@ Atmosphere Images
 .. list-table::
     :header-rows: 1
 
-    * - Atmosphere Image(s)
-      - Link
-
-    * - Only 'Featured' images have ``ez`` installed
-      - `Atmosphere Featured Images <https://atmo.cyverse.org/application/images/search>`__
+    * - A running Atmosphere image      
+      - `Atmosphere Images <https://atmo.cyverse.org/application/images/search>`__
 
 
 ----
