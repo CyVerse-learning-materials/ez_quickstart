@@ -113,7 +113,7 @@ RStudio is a set of integrated tools designed to help you be more productive wit
  .. note:: 
     Because we are using Anaconda3, it is suggested that you use `conda` to install your R packages from a terminal
 
- .. For example:: 
+   1. Examples 
 
     ``conda install -c r r-raster``
 
