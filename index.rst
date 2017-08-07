@@ -110,96 +110,108 @@ Atmosphere Images
 *Get Started*
 -------------
 
-1. Navigate to an `Atmosphere <https://atmo.cyverse.org/application/projects>`_ or `Jetstream <https://use.jetstream-cloud.org/application/projects>`_ project with a running instance
-
-2. Navigate to the command line/terminal of the running instance
-
-3. Run any of the following commands in the terminal 
+1. Navigate to an `Atmosphere <https://atmo.cyverse.org/application/projects>`_ or `Jetstream <https://use.jetstream-cloud.org/application/projects>`_ project with a running instance 
 
 
 *EZ Install (Jupyter, R, Python 2, Python 3)*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+  .. tip::
 
-1. Jupyter notebooks with Python 3 (default)
+   EZ allows "easy" installation of tools using anaconda. This quickstart will
+   cover specific commands for installing:
 
-	``ezj``
 
-2. Jupyter notebooks with Python 2
+   - `Jupyter Notebooks <http://jupyter-notebook.readthedocs.io/en/latest/>`_
+   - `Singularity <http://singularity.lbl.gov/>`_
+   - `Docker <https://www.docker.com/what-docker>`_
 
-	``ezj -2``
+  1. `Connect to Atmosphere via ssh <https://cyverse-atmosphere-guide.readthedocs-hosted.com/en/latest/step3.html#connect-to-atmosphere-instance-using-ssh>`_.
 
-3. Jupyter notebooks with R Kernel
+  2. From your connected session, you can install Jupyter using the following
+     commands:
 
-	``ezj -R`` or ``ezj -r``
+   - Jupyter notebooks with Python 3 (default)
+      ``ezj``
+   - Jupyter notebooks with Python 2
+      ``ezj -2``
+   - Jupyter notebooks with R Kernel
+      ``ezj -R`` or ``ezj -r``
 
-4. After the installation, copy and paste the URL provided into your local computer's browser
+*Connect to a Atmosphere instance running a Jupyter Notebook*
+```````````````````````````````````````````````````````````````
 
-	a. Open Firefox or Chrome on the local computer (your laptop or desktop you are working on)
+  1. After the installation, you will be provided with a URL (e.g. 'http ://128.196.65.162:8888/?token=2d6c40a7c8ee4b4933eaae5898101846bbfcd1e5d6bae37b' )
+     copy and paste the URL provided into your local computer's browser.
 
-	b. In a blank tab, copy and paste the URL provided by ``ezj`` at the end of the installation
+    .. note::
+     The Jupyter notebook is running as an active process on your atmosphere
+     session. If you disconnect from your Atmosphere session, the Jupyter Notebook
+     will terminate.
 
-	c. Leave the Atmosphere terminal running
-
-	d. This has been tested on Firefox and Chrome
-
-5. When you are done using the Jupyter Notebook
-
-	a. Close out the browser tab with the Jupyter notebook interface
-
-	b. Return to the Atmosphere and press: ``control + C``
-
-	c. This will stop the Atmosphere instance from running Jupyter notebooks
+  2. To terminate your Jupyter Notebook, close the browser page with the Jupyter
+     notebook interface. In your Atmosphere ssh session, press: ``control + C`` to
+     terminate the Jupyter notebook.
 
 *Start a new Jupyter session on a VM with EZ already installed*
+````````````````````````````````````````````````````````````````
 
-1. Return to the Atmosphere instance and type ``ezj`` again!
+  1. Connect (ssh) into your Atmosphere instance and type ``ezj``, this will start
+     a new Jupyter notebook. Connect to the notebook using the URL as in step 1 of the
+     Connection instructions above.
 
-	``ezj``
-2. Copy and paste the URL into the browser just as before
 
 *EZ Install Singularity*
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Install Singularity
+  1. `Connect to Atmosphere via ssh`_.
 
-	``ezs``
+  2. From your connected session, you can install Singularity using the following
+     command:
 
 You should see
 
-	``* Updating ez singularity and installing singularity (this may take a few minutes, coffee break!)``
+   You should see
 
-	``[sudo] password for YourCyVerseUserName:``
+    .. code:: bash
 
-Wait for the installation to complete.
+      Updating ez singularity and installing singularity (this may take a few minutes, coffee break!)
+      [sudo] password for YourCyVerseUserName:
 
-2. Test Singularity
+   Wait for the installation to complete.
 
-	``singularity run shub://vsoch/hello-world``
+  3. Test Singularity
+
+    ``singularity run shub://vsoch/hello-world``
 
 *EZ Install Docker*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Install Docker
+ 1. `Connect to Atmosphere via ssh`_.
 
-	``ezd``
+ 2. From your connected session, you can install Docker using the following
+    command:
 
-2. Test Docker
+    ``ezd``
 
-	note: You need to use ``sudo`` permissions with Docker. After using the ``sudo`` command, Atmosphere will ask you for your CyVerse password for security purposes.
+ 3. Test Docker
 
-	``sudo docker run hello-world``
+    ``sudo docker run hello-world``
+
+ .. note::
+
+    You need to use sudo permissions with Docker. After using the sudo command,
+    Atmosphere will ask you for your CyVerse password for security
+    purposes. You can remove the need to use ``sudo`` with Docker commands in the `Advanced Docker Setup <docker.html>`_ section. 
 
 ----
-
-
 
 *Next Steps:*
 -------------
 
 Some common next steps include:
 
-1. `Installation of Rstudio on an Atmosphere Instance <rstudio.html>`_
+1. `Installation of RStudio on an Atmosphere Instance <rstudio.html>`_
 
 2. `Advanced Docker Setup <docker.html>`_
 
