@@ -110,9 +110,15 @@ Atmosphere Images
 *Get Started*
 -------------
 
+1. Navigate to an `Atmosphere <https://atmo.cyverse.org/application/projects>`_ or `Jetstream <https://use.jetstream-cloud.org/application/projects>`_ project with a running instance
+
+2. Navigate to the command line/terminal of the running instance
+
+3. Run any of the following commands in the terminal 
+
+
 *EZ Install (Jupyter, R, Python 2, Python 3)*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 
 
 1. Jupyter notebooks with Python 3 (default)
