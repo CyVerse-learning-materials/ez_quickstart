@@ -3,8 +3,8 @@
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
 
-Install Popular Data Science Tools on Atmosphere Instances
-============================================================
+Install Popular Data Science Tools on Atmosphere or Jetstream Instances
+=======================================================================
 
 ..
     #### Comment: Use short, imperative titles e.g. Upload and share data, uploading and
