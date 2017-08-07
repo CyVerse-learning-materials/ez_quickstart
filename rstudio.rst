@@ -38,23 +38,23 @@ To set up RStudio-Server with the `conda` installation of R you need to set up t
   ``sudo ln -s /usr/lib/x86_64-linux-gnu/libgfortran.so.3 /usr/lib/libgfortran.so``
 
   Install Dependencies
- 
+
   ``sudo apt-get install gdebi-core g++``
 
   Change to the `/opt` folder
- 
+
   ``cd /opt``
- 
+
   ``sudo wget https://download2.rstudio.org/rstudio-server-1.0.153-amd64.deb``
- 
+
   ``sudo gdebi -n rstudio-server-1.0.153-amd64.deb``
- 
+
  Centos
- 
+
  ``cd /opt``
- 
+
  ``sudo wget https://download2.rstudio.org/rstudio-server-rhel-1.0.153-x86_64.rpm``
- 
+
  ``sudo yum install --nogpgcheck rstudio-server-rhel-1.0.153-x86_64.rpm``
 
 Note - this will fail on the first try::
@@ -111,28 +111,23 @@ Note - this will fail on the first try::
  b. Paste the IP address into a new browser window
  c. add `:8787` port # to the IP address
  d. Log in using your CyVerse Username and Password.
- 
+
 *Installing Packages for R and RStudio-Server*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Because we are using Anaconda3, it is suggested that you use `conda` to install your R packages from a terminal
 
-For example: 
+For example:
 
 ``conda install -c r r-raster``
 
 ``conda install -c conda-forge gdal``
- 
+
 ..
     #### Comment: A numbered list of steps go here ####
 
 ----
 
-*Summary*
-~~~~~~~~~
-This documentation is intended for use with CyVerse `Atmosphere <http://atmo.cyverse.org>`_ featured images. It has been tested on Ubuntu 16.04 and Centos 6.8 images.
-
-..
 
 Additional information, help
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~

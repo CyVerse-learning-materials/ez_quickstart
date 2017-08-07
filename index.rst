@@ -110,16 +110,13 @@ Atmosphere Images
 *Get Started*
 -------------
 
-1. Navigate to an `Atmosphere <https://atmo.cyverse.org/application/projects>`_ or `Jetstream <https://use.jetstream-cloud.org/application/projects>`_ project with a running instance 
-
-
 *EZ Install (Jupyter, R, Python 2, Python 3)*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  .. tip::
+EZ allows "easy" installation of tools using anaconda. This quickstart will
+cover specific commands for installing:
 
-   EZ allows "easy" installation of tools using anaconda. This quickstart will
-   cover specific commands for installing:
+  1. Navigate to an `Atmosphere <https://atmo.cyverse.org/application/projects>`_ or `Jetstream <https://use.jetstream-cloud.org/application/projects>`_ project with a running instance
 
 
    - `Jupyter Notebooks <http://jupyter-notebook.readthedocs.io/en/latest/>`_
@@ -200,20 +197,10 @@ Atmosphere Images
 
     You need to use sudo permissions with Docker. After using the sudo command,
     Atmosphere will ask you for your CyVerse password for security
-    purposes. You can remove the need to use ``sudo`` with Docker commands in the `Advanced Docker Setup <docker.html>`_ section. 
+    purposes. You can remove the need to use ``sudo`` with Docker commands in the `Advanced Docker Setup <docker.html>`_ section.
 
 ----
 
-*Next Steps:*
--------------
-
-Some common next steps include:
-
-1. `Installation of RStudio on an Atmosphere Instance <rstudio.html>`_
-
-2. `Advanced Docker Setup <docker.html>`_
-
-----
 
 Additional Information
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
