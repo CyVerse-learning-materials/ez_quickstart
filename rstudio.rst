@@ -52,14 +52,14 @@ Recently we set up a `ez` script which is executed in the terminal or web shell 
    ``sudo yum install --nogpgcheck rstudio-server-rhel-1.0.153-x86_64.rpm``
 
  .. note:: 
-    This will fail on the first try::
+    This will fail on the first try:
 
  .. code:: bash
-   user_name@128:/home$ sudo gdebi rstudio-server-1.0.143-amd64.deb
-   Reading package lists... Done
-   Building dependency tree
-   Reading state information... Done
-   Reading state information... Done
+    user_name@128:/home$ sudo gdebi rstudio-server-1.0.143-amd64.deb
+    Reading package lists... Done
+    Building dependency tree
+    Reading state information... Done
+    Reading state information... Done
 
    RStudio Server
    RStudio is a set of integrated tools designed to help you be more productive with R. It includes a console, syntax    highlighting editor that supports direct code execution, as well as tools for plotting, history, and workspace management.
@@ -92,6 +92,7 @@ Recently we set up a `ez` script which is executed in the terminal or web shell 
  May 13 09:30:40 xxx.xxx.xx.xxx rserver[2236]: ERROR Unable to find an installation of R on the system (which R didn't return  va...pp:472
  May 13 09:30:40 xxx.xxx.xx.xxx systemd[1]: rstudio-server.service: Main process exited, code=exited, status=1/FAILURE
  Hint: Some lines were ellipsized, use -l to show in full.
+  ..
 
    3. Modify `/etc/rstudio/rserver.conf`
 
@@ -113,10 +114,11 @@ Recently we set up a `ez` script which is executed in the terminal or web shell 
 
  .. note:: 
     Because we are using Anaconda3, it is suggested that you use `conda` to install your R packages from a terminal
+ ..
+ 
+ Examples 
 
-   1. Examples 
-
-    ``conda install -c r r-raster``
+   ``conda install -c r r-raster``
 
     ``conda install -c conda-forge gdal``
  
