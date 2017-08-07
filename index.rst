@@ -105,6 +105,7 @@ Atmosphere Images
       - EZ can be used on any running instance created from any image
 
 
+----
 
 *Get Started*
 -------------
