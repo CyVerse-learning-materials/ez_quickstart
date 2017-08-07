@@ -25,25 +25,25 @@ Recently we set up a `ez` script which is executed in the terminal or web shell 
    ``sudo sh -c 'echo "launchctl setenv RSTUDIO_WHICH_R $RSTUDIO_WHICH_R" >> ~/.bash_profile'``
 
  .. note:: 
-   You will need to exit and restart your terminal for these to take effect
+    You will need to exit and restart your terminal for these to take effect
 
  2. Install RStudio-Server using the `latest version <https://www.rstudio.com/products/rstudio/download-server/>`_
 
-   Ubuntu
+ .. Ubuntu::
    - In a terminal, reset the symbolic link for `libfortran.so`:
    ``sudo ln -s /usr/lib/x86_64-linux-gnu/libgfortran.so.3 /usr/lib/libgfortran.so``
 
    - Install Dependencies 
-  ``sudo apt-get install gdebi-core g++``
+   ``sudo apt-get install gdebi-core g++``
 
-  - Change to the `/opt` folder 
-  ``cd /opt``
+   - Change to the `/opt` folder 
+   ``cd /opt``
  
-  ``sudo wget https://download2.rstudio.org/rstudio-server-1.0.153-amd64.deb``
+   ``sudo wget https://download2.rstudio.org/rstudio-server-1.0.153-amd64.deb``
  
-  ``sudo gdebi -n rstudio-server-1.0.153-amd64.deb``
+   ``sudo gdebi -n rstudio-server-1.0.153-amd64.deb``
  
-   Centos
+ .. Centos::
  
    ``cd /opt``
  
@@ -52,16 +52,16 @@ Recently we set up a `ez` script which is executed in the terminal or web shell 
    ``sudo yum install --nogpgcheck rstudio-server-rhel-1.0.153-x86_64.rpm``
 
  .. note:: 
- This will fail on the first try::
+    This will fail on the first try::
 
  .. code:: user_name@128:/home$ sudo gdebi rstudio-server-1.0.143-amd64.deb
- Reading package lists... Done
- Building dependency tree
- Reading state information... Done
- Reading state information... Done
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Reading state information... Done
 
- RStudio Server
- RStudio is a set of integrated tools designed to help you be more productive with R. It includes a console, syntax highlighting editor that supports direct code execution, as well as tools for plotting, history, and workspace management.
+RStudio Server
+RStudio is a set of integrated tools designed to help you be more productive with R. It includes a console, syntax highlighting editor that supports direct code execution, as well as tools for plotting, history, and workspace management.
  Do you want to install the software package? [y/N]:y
  (Reading database ... 136874 files and directories currently installed.)
  Preparing to unpack rstudio-server-1.0.143-amd64.deb ...
@@ -111,13 +111,13 @@ Recently we set up a `ez` script which is executed in the terminal or web shell 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
  .. note:: 
- Because we are using Anaconda3, it is suggested that you use `conda` to install your R packages from a terminal
+    Because we are using Anaconda3, it is suggested that you use `conda` to install your R packages from a terminal
 
- For example: 
+ .. For example:: 
 
- ``conda install -c r r-raster``
+    ``conda install -c r r-raster``
 
- ``conda install -c conda-forge gdal``
+    ``conda install -c conda-forge gdal``
  
 ..
     #### Comment: A numbered list of steps go here ####
