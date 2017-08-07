@@ -9,7 +9,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 from misc.cyverse_sphinx_conf import *  # noqa
 
-project = 'EZ'
+project = 'EZ Installation Quickstart'
 copyright = '2017, CyVerse'
 author = 'Blake Joyce'
 version = '1.0'

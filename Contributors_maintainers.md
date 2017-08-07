@@ -1,6 +1,6 @@
 #Contributors and Maintainers
 
-## CyVerse Maintainer: 
+## CyVerse Maintainer:
 
 **Name:**
 Blake Joyce
@@ -13,4 +13,3 @@ bjoyce3@cyverse.org
 |Name|Contact Info|Institution|Notes|
 |----|------------|-----------|-----|
 |Tyson Swetnam|tyson at cyverse dot org| CyVerse ||
-
