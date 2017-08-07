@@ -54,17 +54,18 @@ Recently we set up a `ez` script which is executed in the terminal or web shell 
  .. note:: 
     This will fail on the first try::
 
- .. code:: user_name@128:/home$ sudo gdebi rstudio-server-1.0.143-amd64.deb
-Reading package lists... Done
-Building dependency tree
-Reading state information... Done
-Reading state information... Done
+ .. code:: bash
+   user_name@128:/home$ sudo gdebi rstudio-server-1.0.143-amd64.deb
+   Reading package lists... Done
+   Building dependency tree
+   Reading state information... Done
+   Reading state information... Done
 
-RStudio Server
-RStudio is a set of integrated tools designed to help you be more productive with R. It includes a console, syntax highlighting editor that supports direct code execution, as well as tools for plotting, history, and workspace management.
- Do you want to install the software package? [y/N]:y
- (Reading database ... 136874 files and directories currently installed.)
- Preparing to unpack rstudio-server-1.0.143-amd64.deb ...
+   RStudio Server
+   RStudio is a set of integrated tools designed to help you be more productive with R. It includes a console, syntax    highlighting editor that supports direct code execution, as well as tools for plotting, history, and workspace management.
+   Do you want to install the software package? [y/N]:y
+   (Reading database ... 136874 files and directories currently installed.)
+   Preparing to unpack rstudio-server-1.0.143-amd64.deb ...
  Unpacking rstudio-server (1.0.143) over (1.0.143) ...
  Setting up rstudio-server (1.0.143) ...
  useradd: user 'rstudio-server' already exists
