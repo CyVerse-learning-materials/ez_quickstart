@@ -169,8 +169,6 @@ Atmosphere Images
   2. From your connected session, you can install Singularity using the following
      command:
 
-You should see
-
    You should see
 
     .. code:: bash
