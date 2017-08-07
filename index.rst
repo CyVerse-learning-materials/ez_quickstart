@@ -93,18 +93,17 @@ Platform(s)
 Atmosphere Images
 ~~~~~~~~~~~~~~~~~
 
-*In order to complete this quickstart you will need to have the following*
+*In order to complete this quickstart you will need to have the following:*
+
 
 .. list-table::
     :header-rows: 1
 
     * - A running Atmosphere image
       - Notes
-      - `A running Atmosphere or Jetstream Image <https://atmo.cyverse.org/application/images/1420>`__
-    * - EZ can be used on any running instance created from any image
+    * - `A running Atmosphere or Jetstream Image <https://atmo.cyverse.org/application/images/1420>`__
+      - EZ can be used on any running instance created from any image
 
-
-----
 
 
 *Get Started*
