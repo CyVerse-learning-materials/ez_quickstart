@@ -98,9 +98,10 @@ Atmosphere Images
 .. list-table::
     :header-rows: 1
 
-    * - A running Atmosphere image      
-      - `Atmosphere Images <https://atmo.cyverse.org/application/images/search>`__
-    * -
+    * - A running Atmosphere image
+      - Notes
+      - `A running Atmosphere or Jetstream Image <https://atmo.cyverse.org/application/images/1420>`__
+    * - EZ can be used on any running instance created from any image
 
 
 ----
