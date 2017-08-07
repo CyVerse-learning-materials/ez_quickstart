@@ -3,8 +3,8 @@
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
 
-EZ installation of popular data scientist tools
-===============================================
+Install Popular Data Science Tools on Atmosphere or Jetstream Instances
+=======================================================================
 
 ..
     #### Comment: Use short, imperative titles e.g. Upload and share data, uploading and
@@ -12,6 +12,7 @@ EZ installation of popular data scientist tools
 
 *Goal*
 ------
+The `ez` command line program allows users to install popular data science packages such as Anaconda (Jupyter notebooks, Python 2/3, R), Docker, and Singularity with simple commands on any running Atmosphere or Jetstream instance.
 
 ..
     Avoid covering upstream and downstream steps that are not explicitly and
@@ -28,7 +29,7 @@ EZ installation of popular data scientist tools
 	:maxdepth: 2
 
 	EZ Installation of Popular Data Scientist Tools <self>
-  Installation of Rstudio on an Atmosphere Instance <rstudio.rst>
+  Installation of RStudio on an Atmosphere Instance <rstudio.rst>
   Advanced Installation of Docker <docker.rst>
 
 ..
@@ -92,31 +93,34 @@ Platform(s)
 Atmosphere Images
 ~~~~~~~~~~~~~~~~~
 
-*In order to complete this quickstart you will need to have the following*
+*In order to complete this quickstart you will need to have the following:*
+
 
 .. list-table::
     :header-rows: 1
 
-    * - Atmosphere Image(s)
-      - Link
-
-    * - Only 'Featured' images have ``ez`` installed
-      - `Atmosphere Featured Images <https://atmo.cyverse.org/application/images/search>`__
+    * - A running Atmosphere image
+      - Notes
+    * - `A running Atmosphere or Jetstream Image <https://atmo.cyverse.org/application/images/1420>`__
+      - EZ can be used on any running instance created from any image
 
 
 ----
 
-
 *Get Started*
 -------------
 
-*Install Anaconda (Jupyter, R, Python 2, Python 3)*
+1. Navigate to an `Atmosphere <https://atmo.cyverse.org/application/projects>`_ or `Jetstream <https://use.jetstream-cloud.org/application/projects>`_ project with a running instance 
+
+
+*EZ Install (Jupyter, R, Python 2, Python 3)*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   .. tip::
 
    EZ allows "easy" installation of tools using anaconda. This quickstart will
    cover specific commands for installing:
+
 
    - `Jupyter Notebooks <http://jupyter-notebook.readthedocs.io/en/latest/>`_
    - `Singularity <http://singularity.lbl.gov/>`_
@@ -157,15 +161,15 @@ Atmosphere Images
      Connection instructions above.
 
 
-*Install Singularity*
-~~~~~~~~~~~~~~~~~~~~~
+*EZ Install Singularity*
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
   1. `Connect to Atmosphere via ssh`_.
 
   2. From your connected session, you can install Singularity using the following
      command:
 
-     ``ezs``
+You should see
 
    You should see
 
@@ -180,7 +184,7 @@ Atmosphere Images
 
     ``singularity run shub://vsoch/hello-world``
 
-*Install Docker with `ez`*
+*EZ Install Docker*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
  1. `Connect to Atmosphere via ssh`_.
@@ -198,13 +202,9 @@ Atmosphere Images
 
     You need to use sudo permissions with Docker. After using the sudo command,
     Atmosphere will ask you for your CyVerse password for security
-    purposes.
-
-
+    purposes. You can remove the need to use ``sudo`` with Docker commands in the `Advanced Docker Setup <docker.html>`_ section. 
 
 ----
-
-
 
 *Next Steps:*
 -------------
