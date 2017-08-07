@@ -9,34 +9,34 @@
 *Docker-Compose install with Anaconda*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Install `pip`
+   1. Install `pip`
 
     ``sudo wget https://bootstrap.pypa.io/get-pip.py``
 
     ``python get-pip.py``
 
-2. Change ownership of `/home/anaconda*`
+   2. Change ownership of `/home/anaconda*`
 
     ``sudo chown ${USER}:iplant-everyone /home/anaconda*/ -R``
 
-3. Install Docker-Compose
+   3. Install Docker-Compose
 
     ``sudo pip install docker-compose``
 
 *Running Docker without sudo*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Add the Docker group
+   1. Add the Docker group
 
     ``groupadd docker``
 
-2. Add user to group 
+   2. Add user to group 
 
     ``sudo usermod -aG docker $USER``
     
-3. Close Terminal and reopen
+   3. Close Terminal and reopen
 
-4. Test Docker without `sudo`
+   4. Test Docker without `sudo`
 
     ``docker run hello-world``
 
