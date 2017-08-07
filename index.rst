@@ -110,9 +110,6 @@ Atmosphere Images
 *Get Started*
 -------------
 
-1. Navigate to an `Atmosphere <https://atmo.cyverse.org/application/projects>`_ or `Jetstream <https://use.jetstream-cloud.org/application/projects>`_ project with a running instance 
-
-
 *EZ Install (Jupyter, R, Python 2, Python 3)*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -126,9 +123,10 @@ Atmosphere Images
    - `Singularity <http://singularity.lbl.gov/>`_
    - `Docker <https://www.docker.com/what-docker>`_
 
-  1. `Connect to Atmosphere via ssh <https://cyverse-atmosphere-guide.readthedocs-hosted.com/en/latest/step3.html#connect-to-atmosphere-instance-using-ssh>`_.
+  1. Navigate to an `Atmosphere <https://atmo.cyverse.org/application/projects>`_ or `Jetstream <https://use.jetstream-cloud.org/application/projects>`_ project with a running instance 
+  2. `Connect to Atmosphere via ssh <https://cyverse-atmosphere-guide.readthedocs-hosted.com/en/latest/step3.html#connect-to-atmosphere-instance-using-ssh>`_.
 
-  2. From your connected session, you can install Jupyter using the following
+  3. From your connected session, you can install Jupyter using the following
      commands:
 
    - Jupyter notebooks with Python 3 (default)
