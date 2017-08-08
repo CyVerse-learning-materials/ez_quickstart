@@ -6,27 +6,27 @@
 *Advanced Installation of Docker*
 =================================
 
-*Docker-Compose install with Anaconda*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*Docker-Compose Install 
+~~~~~~~~~~~~~~~~~~~~~~~
 
-   1. Install `pip`
+   1. For instances without Anaconda install `pip`
 
     ``sudo wget https://bootstrap.pypa.io/get-pip.py``
 
-    ``python get-pip.py``
+    ``sudo python3 get-pip.py``
 
-   2. Change ownership of `/home/anaconda*`
+   2. For instances with Anaconda (ezj) change ownership of `/home/anaconda3`
 
-    ``sudo chown ${USER}:iplant-everyone /home/anaconda*/ -R``
+    ``sudo chown ${USER}:iplant-everyone /home/anaconda3/ -R``
 
    3. Install Docker-Compose
 
-    ``sudo pip install docker-compose``
+    ``sudo pip3 install docker-compose``
 
 *Running Docker without sudo*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   1. Add the Docker group
+   1. Check for and add the group `docker` (note: `docker` group should already exist)
 
     ``groupadd docker``
 
