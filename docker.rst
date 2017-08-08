@@ -6,8 +6,8 @@
 *Advanced Installation of Docker*
 =================================
 
-*Docker-Compose Install 
-~~~~~~~~~~~~~~~~~~~~~~~
+*Docker-Compose Install* 
+~~~~~~~~~~~~~~~~~~~~~~~~
 
    1. For instances without Anaconda install `pip`
 
