@@ -166,6 +166,7 @@ Atmosphere Images
 
   2. From your connected session, you can install Singularity using the following
      command:
+     ``ezs``
 
    You should see
 
