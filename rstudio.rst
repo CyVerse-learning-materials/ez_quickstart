@@ -18,13 +18,12 @@ Recently we set up a `ez` script which is executed in the terminal or web shell 
    ``export PATH="/home/anaconda3/bin:$PATH"``
 
    - Change ownership of the /home/anaconda3/ directory
-   ``chown ${USER}:iplant-everyone /home/anaconda3/ -R``
+   ``sudo chown ${USER}:iplant-everyone /home/anaconda3/ -R``
 
-   - Add two pathes to your `~/.bash_profile`:
-   ``sudo sh -c 'echo "export RSTUDIO_WHICH_R="/home/anaconda3/bin/R"" >> ~/.bash_profile'``
-   ``sudo sh -c 'echo "launchctl setenv RSTUDIO_WHICH_R $RSTUDIO_WHICH_R" >> ~/.bash_profile'``
+   - Add a path to your `~/.bash_profile`:
+   ``echo "export RSTUDIO_WHICH_R='/home/anaconda3/bin/R'" >> ~/.bash_profile``
 
- .. note:: 
+ .. note::
     You will need to exit and restart your terminal for these to take effect
 
  2. Install RStudio-Server using the `latest version <https://www.rstudio.com/products/rstudio/download-server/>`_
@@ -33,25 +32,25 @@ Recently we set up a `ez` script which is executed in the terminal or web shell 
    - In a terminal, reset the symbolic link for `libfortran.so`:
    ``sudo ln -s /usr/lib/x86_64-linux-gnu/libgfortran.so.3 /usr/lib/libgfortran.so``
 
-   - Install Dependencies 
+   - Install Dependencies
    ``sudo apt-get install gdebi-core g++``
 
-   - Change to the `/opt` folder 
+   - Change to the `/opt` folder
    ``cd /opt``
- 
+
    ``sudo wget https://download2.rstudio.org/rstudio-server-1.0.153-amd64.deb``
- 
+
    ``sudo gdebi -n rstudio-server-1.0.153-amd64.deb``
- 
+
  .. Centos::
- 
+
    ``cd /opt``
- 
+
    ``sudo wget https://download2.rstudio.org/rstudio-server-rhel-1.0.153-x86_64.rpm``
- 
+
    ``sudo yum install --nogpgcheck rstudio-server-rhel-1.0.153-x86_64.rpm``
 
- .. note:: 
+ .. note::
     This will fail on the first try:
 
 ::
@@ -94,34 +93,34 @@ Recently we set up a `ez` script which is executed in the terminal or web shell 
     May 13 09:30:40 xxx.xxx.xx.xxx systemd[1]: rstudio-server.service: Main process exited, code=exited, status=1/FAILURE
     Hint: Some lines were ellipsized, use -l to show in full.
 
-   3. Modify `/etc/rstudio/rserver.conf`
+3. Modify `/etc/rstudio/rserver.conf`
 
    ``sudo sh -c 'echo "rsession-which-r=/home/anaconda3/bin/R" >> /etc/rstudio/rserver.conf'``
 
-   4. Restart RStudio-Server
+4. Restart RStudio-Server
 
    ``sudo rstudio-server start``
 
-   5. Log into RStudio-Server
+5. Log into RStudio-Server
 
    - Copy the IP address for the VM from the Atmosphere browser window.
    - Paste the IP address into a new browser window
    - add `:8787` port # to the IP address
    - Log in using your CyVerse Username and Password.
- 
+
 *Installing Packages for R and RStudio-Server*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
- .. note:: 
+ .. note::
     Because we are using Anaconda3, it is suggested that you use `conda` to install your R packages from a terminal
  ..
- 
- Examples 
+
+ Examples
 
    ``conda install -c r r-raster``
 
-    ``conda install -c conda-forge gdal``
- 
+   ``conda install -c conda-forge gdal``
+
 ..
     #### Comment: A numbered list of steps go here ####
 
