@@ -158,6 +158,20 @@ Atmosphere Images
      a new Jupyter notebook. Connect to the notebook using the URL as in step 1 of the
      Connection instructions above.
 
+*Install (new) JupyterLab
+
+  1. Complete the installation of Jupyter notebooks as above. 
+  
+  2. 
+  
+  sudo chown $USER:iplant-everyone /home/anaconda3 -R
+  
+  
+  3. Determine the version of Jupyter notebook installed. 
+  ``jupyter --version``
+  
+  4. 
+
 
 *EZ Install Singularity*
 ~~~~~~~~~~~~~~~~~~~~~~~~~
