@@ -86,10 +86,15 @@ Platform(s)
       - Platform Documentation
       - Quick Start
     * - Atmosphere
-      - Command line (ssh) and/or Desktop (VNC)
+      - Command line (ssh) and/or Desktop (VNC, Guacamole WebDesktop)
       - `Atmosphere <https://atmo.cyverse.org>`_
       - `Atmosphere Manual <https://wiki.cyverse.org/wiki/display/atmman/Atmosphere+Manual+Table+of+Contents>`_
       - `Guide <https://cyverse-atmosphere-guide.readthedocs-hosted.com/en/latest/>`__
+    * - Jetstream
+      - Command line (ssh) and/or Desktop (VNC, Guacamole WebDesktop)
+      - `Jetstream <use.jetstream-cloud.org/application>`_ 
+      - `Jetstream Manual <https://iujetstream.atlassian.net/wiki/spaces/JWT/overview>`_ 
+      - `XSEDE Portal <https://portal.xsede.org/#/guest>`_ 
 
 Atmosphere Images
 ~~~~~~~~~~~~~~~~~
@@ -109,10 +114,7 @@ Atmosphere Images
 *Get Started*
 -------------
 
-*EZ Install Anaconda (Jupyter, Jupyter Hub, Jupyter Lab)*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-  .. tip::
+ .. tip::
 
    `ez` allows an "easy" installation of `Anaconda <https://www.anaconda.com/>`_ based Jupyter notebooks or Jupyter Hub, Singularity, and Docker.
    
@@ -123,11 +125,17 @@ Atmosphere Images
    - `Singularity <http://singularity.lbl.gov/>`_
    - `Docker <https://www.docker.com/what-docker>`_
 
-  1. Launch an `Atmosphere <https://atmo.cyverse.org/application/projects>`_ or `Jetstream <https://use.jetstream-cloud.org/application/projects>`_ instance and open the Web Shell.
+  1. Launch an `Atmosphere <https://atmo.cyverse.org/application/projects>`_ or `Jetstream <https://use.jetstream-cloud.org/application/projects>`_ instance.
   
-  2. `Connect to Atmosphere via ssh <https://cyverse-atmosphere-guide.readthedocs-hosted.com/en/latest/step3.html#connect-to-atmosphere-instance-using-ssh>`_.
+  2. Connect via `ssh` `using a terminal <https://cyverse-atmosphere-guide.readthedocs-hosted.com/en/latest/step3.html#connect-to-atmosphere-instance-using-ssh>`_.
+  
+  3. Connect via the instance's web shell.
+  
 
-  3. From your connected session, you can install Jupyter using the following
+*EZ Install Anaconda (Jupyter, Jupyter Hub, Jupyter Lab)*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+From your terminal session, you can install Anaconda Jupyter using the following
      commands:
 
    - Jupyter notebooks with Python 3 (default)
@@ -139,46 +147,54 @@ Atmosphere Images
    - Jupyter Hub 
       ``ezjh``
 
-*Connect to an Atmosphere instance running a Jupyter Notebook*
-`````````````````````````````````````````````````````````````
+*Launching a Jupyter Notebook*
+````````````````````````````
 
-  1. After the installation, you will be provided with a URL (e.g. `http ://128.196.65.162:8888/?token=2d6c40a7c8ee4b4933eaae5898101846bbfcd1e5d6bae37b` )
-     copy and paste the URL provided into your local computer's browser.
+After the `ezj` installation, you will be provided with a URL (e.g. `http ://128.196.65.162:8888/?token=2d6c40a7c8ee4b4933eaae5898101846bbfcd1e5d6bae37b` ) in your terminal session. 
 
     .. note::
      The Jupyter notebook is running as an active process in the foreground on your Atmosphere
      instance. If you disconnect from your Atmosphere terminal session, the Jupyter Notebook
      will terminate.
+     
+     One trick to keep the session running is to use a `screen` or `tmux` and disconnect the session before you close your browser tab. 
 
-  2. To terminate your Jupyter Notebook, close the browser page with the Jupyter
-     notebook interface. In your Atmosphere ssh session, press: ``control + C`` to
-     terminate the Jupyter notebook.
+To terminate your Jupyter Notebook, close the browser page with the Jupyter notebook interface. In your Atmosphere ssh session, press: ``control + C`` to terminate the Jupyter notebook.
 
-*Start a new Jupyter session on a VM with EZ already installed*
-````````````````````````````````````````````````````````````````
+ .. tip::
+	*Start a new Jupyter session on a VM with EZ already installed*
 
-  1. Connect (ssh) into your running Atmosphere instance and type ``ezj``, this will restart
-     a new Jupyter notebook. Connect to the notebook using the URL as in step 1 of the
-     Connection instructions above.
+	At the terminal command prompt retype ``ezj``, this will restart the conda virtual environment and a new Jupyter notebook. Connect to the notebook using the URL as in the instructions above. Don't forget to use `tmux`!
 
-*Install (new) JupyterLab*
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+*Install JupyterLab (new)*
+``````````````````````````
 
-  1. Complete the installation of Jupyter notebooks as above. 
+Complete the ``ezj`` installation. 
   
-  2. Change ownership of the Anaconda installation to allow new software to be installed by the non-root user. 
+Change ownership of the Anaconda installation directory to allow new software to be installed by the non-root user. 
   
-  On Atmosphere:
-  ``sudo chown $USER:iplant-everyone /home/anaconda3 -R``
+    On Atmosphere: ``sudo chown $USER:iplant-everyone /home/anaconda3 -R``
+    
+    On Jetstream: ``sudo chown $USER:root /home/anaconda3 -R`` 
   
-  On Jetstream:
-  ``sudo chown $USER:root /home/anaconda3 -R`` 
+Install Jupyter Lab *Beta* using Conda: ``conda install -c conda-forge jupyterlab``
   
-  3. Install Jupyter Lab *Beta*
-  ``conda install -c conda-forge jupyterlab``
-  
-  3. Determine the version of Jupyter notebook installed. 
-  ``jupyter --version``
+*Install Jupyter Hub*
+`````````````````````
+
+*Currently available on CyVerse Atmosphere Only*
+
+From your terminal type ``ezjh`` 
+
+The installation may take up to 10 minutes to complete.
+
+Once the session is running, you'll get a URL address to the VM. 
+
+Copy paste the URL into your browser. 
+
+You will be re-directed back to CyVerse CAS service, log into your account.
+
+The Jupyer Hub should now be loaded in the browser tab.
 
 
 *EZ Install Singularity*
