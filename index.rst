@@ -119,7 +119,7 @@ Atmosphere Images
    This quickstart will cover specific commands for installing:
 
    - `Jupyter Notebooks <http://jupyter-notebook.readthedocs.io/en/latest/>`_
-   - 'Jupyter Hub <http://jupyterhub.readthedocs.io/en/latest/>`_ 
+   - `Jupyter Hub <http://jupyterhub.readthedocs.io/en/latest/>`_ 
    - `Singularity <http://singularity.lbl.gov/>`_
    - `Docker <https://www.docker.com/what-docker>`_
 
