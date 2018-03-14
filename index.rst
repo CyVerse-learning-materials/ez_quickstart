@@ -12,7 +12,7 @@ Install Popular Data Science Tools on Atmosphere or Jetstream Instances
 
 *Goal*
 ------
-The `ez` command line program allows users to install popular data science packages such as Anaconda (Jupyter notebooks, Python 2/3, R), Docker, and Singularity with simple commands on any running Atmosphere or Jetstream instance.
+The `ez` command line program allows users to install popular data science packages such as Anaconda (Jupyter Notebooks, Python 2/3, R), Docker, and Singularity with simple commands on any running Atmosphere or Jetstream instance.
 
 ..
     Avoid covering upstream and downstream steps that are not explicitly and
@@ -99,7 +99,7 @@ Platform(s)
 Atmosphere Images
 ~~~~~~~~~~~~~~~~~
 
-*In order to complete this quickstart you will need to have the following:*
+*`ez` is deployed on all featured instances in Atmosphere and Jetstream*
 
 .. list-table::
     :header-rows: 1
@@ -166,8 +166,8 @@ To terminate your Jupyter Notebook, close the browser page with the Jupyter note
 
 	At the terminal command prompt retype ``ezj``, this will restart the conda virtual environment and a new Jupyter notebook. Connect to the notebook using the URL as in the instructions above. Don't forget to use `tmux`!
 
-*Install JupyterLab (new)*
-``````````````````````````
+*Install Jupyter Lab (new)*
+```````````````````````````
 
 Complete the ``ezj`` installation. 
   
@@ -179,8 +179,8 @@ Change ownership of the Anaconda installation directory to allow new software to
   
 Install Jupyter Lab *Beta* using Conda: ``conda install -c conda-forge jupyterlab``
   
-*Install Jupyter Hub*
-`````````````````````
+*Install Jupyter Hub (new)*
+```````````````````````````
 
 *Currently available on CyVerse Atmosphere Only*
 
