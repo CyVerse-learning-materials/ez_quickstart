@@ -12,8 +12,16 @@ Install Popular Data Science Tools on Atmosphere or Jetstream Instances
 
 *Goal*
 ------
-The `ez` command line program allows users to install popular data science packages such as Anaconda (Jupyter Notebooks, Python 2/3, R), Docker, and Singularity with simple commands on any running Atmosphere or Jetstream instance.
 
+   ``ez`` allows an "easy" installation of `Anaconda <https://www.anaconda.com/>`_ based Jupyter notebook, Jupyter Hub, Singularity, and Docker.
+   
+   This quickstart will cover specific commands for installing the following:
+
+   - `Jupyter Notebooks <http://jupyter-notebook.readthedocs.io/en/latest/>`_
+   - `Jupyter Hub <http://jupyterhub.readthedocs.io/en/latest/>`_ 
+   - `Singularity <http://singularity.lbl.gov/>`_
+   - `Docker <https://www.docker.com/what-docker>`_
+  
 ..
     Avoid covering upstream and downstream steps that are not explicitly and
     necessarily part of the tutorial - write or link to separate quick
@@ -46,7 +54,6 @@ The `ez` command line program allows users to install popular data science packa
 
 *Prerequisites*
 ---------------
-
 
 
 Downloads, access, and services
@@ -99,7 +106,7 @@ Platform(s)
 Atmosphere Images
 ~~~~~~~~~~~~~~~~~
 
-*`ez` is deployed on all featured instances in Atmosphere and Jetstream*
+*``ez`` is deployed on all featured instances in Atmosphere and Jetstream*
 
 .. list-table::
     :header-rows: 1
@@ -113,26 +120,17 @@ Atmosphere Images
 
 *Get Started*
 -------------
-
- .. tip::
-
-   `ez` allows an "easy" installation of `Anaconda <https://www.anaconda.com/>`_ based Jupyter notebooks or Jupyter Hub, Singularity, and Docker.
-   
-   This quickstart will cover specific commands for installing:
-
-   - `Jupyter Notebooks <http://jupyter-notebook.readthedocs.io/en/latest/>`_
-   - `Jupyter Hub <http://jupyterhub.readthedocs.io/en/latest/>`_ 
-   - `Singularity <http://singularity.lbl.gov/>`_
-   - `Docker <https://www.docker.com/what-docker>`_
-
-  1. Launch an `Atmosphere <https://atmo.cyverse.org/application/projects>`_ or `Jetstream <https://use.jetstream-cloud.org/application/projects>`_ instance.
   
-  2. Connect via `ssh` `using a terminal <https://cyverse-atmosphere-guide.readthedocs-hosted.com/en/latest/step3.html#connect-to-atmosphere-instance-using-ssh>`_.
+Launch an `Atmosphere <https://atmo.cyverse.org/application/projects>`_ or `Jetstream <https://use.jetstream-cloud.org/application/projects>`_ instance.
   
-  3. Connect via the instance's web shell.
-  
+Connect via ``ssh`` `using a terminal <https://cyverse-atmosphere-guide.readthedocs-hosted.com/en/latest/step3.html#connect-to-atmosphere-instance-using-ssh>`_.
 
-*EZ Install Anaconda (Jupyter, Jupyter Hub, Jupyter Lab)*
+OR
+
+Connect via the instance's web shell via the Atmosphere Instance's web page.
+
+
+*EZ Install Anaconda (Jupyter, Jupyter Lab, Jupyter Hub)*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 From your terminal session, you can install Anaconda Jupyter using the following
@@ -147,22 +145,22 @@ From your terminal session, you can install Anaconda Jupyter using the following
    - Jupyter Hub 
       ``ezjh``
 
-*Launching a Jupyter Notebook*
-````````````````````````````
+*Jupyter Notebooks*
+```````````````````
 
-After the `ezj` installation, you will be provided with a URL (e.g. `http ://128.196.65.162:8888/?token=2d6c40a7c8ee4b4933eaae5898101846bbfcd1e5d6bae37b` ) in your terminal session. 
+After the `ezj` installation, you will be provided a URL (e.g. `http ://128.196.65.162:8888/?token=2d6c40a7c8ee4b4933eaae5898101846bbfcd1e5d6bae37b`) in your terminal session. Copy paste this into your new browser tab.
 
     .. note::
-     The Jupyter notebook is running as an active process in the foreground on your Atmosphere
+     A Jupyter Notebook is running as an active process in the foreground on your Atmosphere
      instance. If you disconnect from your Atmosphere terminal session, the Jupyter Notebook
      will terminate.
      
-     One trick to keep the session running is to use a `screen` or `tmux` and disconnect the session before you close your browser tab. 
+     One trick to keep the session running is to use a ``screen`` or ``tmux`` and disconnect the session before you close your browser tab. 
 
 To terminate your Jupyter Notebook, close the browser page with the Jupyter notebook interface. In your Atmosphere ssh session, press: ``control + C`` to terminate the Jupyter notebook.
 
  .. tip::
-	*Start a new Jupyter session on a VM with EZ already installed*
+	*Restart a new Jupyter session on a VM with EZ already installed*
 
 	At the terminal command prompt retype ``ezj``, this will restart the conda virtual environment and a new Jupyter notebook. Connect to the notebook using the URL as in the instructions above. Don't forget to use `tmux`!
 
@@ -177,22 +175,22 @@ Change ownership of the Anaconda installation directory to allow new software to
     
     On Jetstream: ``sudo chown $USER:root /home/anaconda3 -R`` 
   
-Install Jupyter Lab *Beta* using Conda: ``conda install -c conda-forge jupyterlab``
+Install Jupyter Lab *Beta* using ``conda`` package manager: ``conda install -c conda-forge jupyterlab``
   
 *Install Jupyter Hub (new)*
 ```````````````````````````
 
-*Currently available on CyVerse Atmosphere Only*
+*Currently available on CyVerse Atmosphere*
 
-From your terminal type ``ezjh`` 
+From terminal type ``ezjh`` 
 
 The installation may take up to 10 minutes to complete.
 
-Once the session is running, you'll get a URL address to the VM. 
+Once the install is complete, and a session is running, you'll get a URL address to the VM. 
 
-Copy paste the URL into your browser. 
+Copy paste the URL into your new browser tab. 
 
-You will be re-directed back to CyVerse CAS service, log into your account.
+You will be re-directed back to a CyVerse CAS service, log into your account.
 
 The Jupyer Hub should now be loaded in the browser tab.
 
@@ -200,11 +198,7 @@ The Jupyer Hub should now be loaded in the browser tab.
 *EZ Install Singularity*
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  1. `Connect to Atmosphere via ssh`_.
-
-  2. From your connected session, you can install Singularity using the following
-     command:
-     ``ezs``
+From your terminal, type the following command: ``ezs``
 
    You should see
 
@@ -215,7 +209,7 @@ The Jupyer Hub should now be loaded in the browser tab.
 
    Wait for the installation to complete.
 
-  3. Test Singularity
+Test Singularity
 
     ``singularity run shub://vsoch/hello-world``
 
