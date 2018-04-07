@@ -15,9 +15,11 @@
 
     ``sudo python3 get-pip.py``
 
-   2. For instances with Anaconda (ezj) change ownership of `/home/anaconda3`
+   2. For instances with Anaconda (ezj) change ownership of `/opt/anaconda3`
 
-    ``sudo chown ${USER}:iplant-everyone /home/anaconda3/ -R``
+    On Atmosphere: ``sudo chown ${USER}:iplant-everyone /opt/anaconda3/ -R``
+   
+    On Jetstream: ``sudo chown ${USER}:root /opt/anaconda3/ -R``
 
    3. Install Docker-Compose
 
