@@ -164,23 +164,19 @@ To terminate your Jupyter Notebook, close the browser page with the Jupyter note
 
 	At the terminal command prompt retype ``ezj``, this will restart the conda virtual environment and a new Jupyter notebook. Connect to the notebook using the URL as in the instructions above. Don't forget to use `tmux`!
 
-*Install Jupyter Lab (new)*
-```````````````````````````
+*Jupyter Lab (new)*
+```````````````````
 
 Complete the ``ezj`` installation. 
   
-Change ownership of the Anaconda installation directory to allow new software to be installed by the non-root user. 
-  
-    On Atmosphere: ``sudo chown $USER:iplant-everyone /home/anaconda3 -R``
-    
-    On Jetstream: ``sudo chown $USER:root /home/anaconda3 -R`` 
-  
-Install Jupyter Lab *Beta* using ``conda`` package manager: ``conda install -c conda-forge jupyterlab``
-  
+Jupyter Lab (Beta) is now included in the base Anaconda installation
+
+To start a new Jupyter Lab session type:
+
+``jupyter lab``
+
 *Install Jupyter Hub (new)*
 ```````````````````````````
-
-*Currently available on CyVerse Atmosphere*
 
 From terminal type ``ezjh`` 
 
@@ -192,7 +188,7 @@ Copy paste the URL into your new browser tab.
 
 You will be re-directed back to a CyVerse CAS service, log into your account.
 
-The Jupyer Hub should now be loaded in the browser tab.
+The Jupyter Hub should now be loaded in the browser tab.
 
 
 *EZ Install Singularity*
@@ -200,7 +196,7 @@ The Jupyer Hub should now be loaded in the browser tab.
 
 From your terminal, type the following command: ``ezs``
 
-   You should see
+You should see
 
     .. code:: bash
 
@@ -243,6 +239,8 @@ Some common next steps include:
 1. `Installation of RStudio on an Atmosphere Instance <rstudio.html>`_
 
 2. `Advanced Docker Setup <docker.html>`_
+
+3. `Adding to Anaconda <anaconda.html>`_
 
 ----
 
