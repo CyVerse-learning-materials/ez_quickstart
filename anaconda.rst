@@ -1,4 +1,13 @@
-# Installing new packages in Anaconda
+|CyVerse logo|_
+
+|Home_Icon|_
+`Learning Center Home <http://learning.cyverse.org/>`_
+
+*Advanced Installation of Anaconda*
+===================================
+
+*Installing new packages * 
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Change ownership of the Anaconda installation directory to allow new software to be installed by the non-root user. 
   
@@ -6,3 +15,4 @@ Change ownership of the Anaconda installation directory to allow new software to
     
     On Jetstream: ``sudo chown $USER:root /opt/anaconda3 -R`` 
   
+Use the ``conda install -c conda-forge package-name`` to add new packages.
