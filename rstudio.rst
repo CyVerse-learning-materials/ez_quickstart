@@ -95,7 +95,7 @@ Recently we set up a `ez` script which is executed in the terminal or web shell 
 
 3. Modify `/etc/rstudio/rserver.conf`
 
-   ``sudo sh -c 'echo "rsession-which-r=/home/anaconda3/bin/R" >> /etc/rstudio/rserver.conf'``
+   ``sudo sh -c 'echo "rsession-which-r=/opt/anaconda3/bin/R" >> /etc/rstudio/rserver.conf'``
 
 4. Restart RStudio-Server
 
