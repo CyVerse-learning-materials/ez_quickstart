@@ -15,13 +15,13 @@ Recently we set up a `ez` script which is executed in the terminal or web shell 
  1. To set up RStudio-Server with the `conda` installation of R you need to set up the bash profile.
 
    - Add `anaconda3` to your path
-   ``export PATH="/home/anaconda3/bin:$PATH"``
+   ``export PATH="/opt/anaconda3/bin:$PATH"``
 
-   - Change ownership of the /home/anaconda3/ directory
-   ``sudo chown ${USER}:iplant-everyone /home/anaconda3/ -R``
+   - Change ownership of the /opt/anaconda3/ directory
+   ``sudo chown ${USER}:iplant-everyone /opt/anaconda3/ -R``
 
    - Add a path to your `~/.bash_profile`:
-   ``echo "export RSTUDIO_WHICH_R='/home/anaconda3/bin/R'" >> ~/.bash_profile``
+   ``echo "export RSTUDIO_WHICH_R='/opt/anaconda3/bin/R'" >> ~/.bash_profile``
 
  .. note::
     You will need to exit and restart your terminal for these to take effect
